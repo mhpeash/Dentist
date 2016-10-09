@@ -41,25 +41,25 @@
       //background: rgba(13,175,74,0.5);
 
   }
-  #core
+
+  .modalfield
   {
-    width: 100%;
-    height: 400px;
-
+    padding:100px;
+    background:rgba(0,0,0,0.5);
+    color:white;font-size:18px;
   }
-.btn-default
+
+.col-sm-6 >.btn
 {
- width:400px;
-
+  width: 250px;
 }
-
 
 
   </style>
 </head>
 <body>
 
-<div class="container-fluid " id="core">
+<div class="container-fluid">
 
   <div class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -99,26 +99,101 @@
                               <!--SIGN IN and LOGin SECTION-->
 
 
-  <div class="container-fluid" style="background-color:#0daf4a; height:500px ">
-
-<div style="padding:200px">
-
+  <div class="container" style="background-color:#0daf4a; height:500px ">
 
     <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" >Sign In</button>
-    <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
+
+<div class="row" style="margin:150px">
+    <!--......................................................................................................................Button LOGIN-->
+
+
+
+  <div class="col-sm-6">
+
+  <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" >SIGNIN</button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog" >
+
+      <!-- Modal Signin content-->
+            <div class="modal-content modalfield"  >
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="username">User Name</label>
+                        <div class="col-sm-8">
+                            <input type="username" class="form-control" id="username" placeholder="Enter User Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="pwd">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-9 col-sm-3" >
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <!--......................................................................................................................Button REGISTER-->
+  <div class="col-sm-6">
+
+      <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#register" >REGISTER NOW</button>
+      <div class="modal fade" id="register" role="dialog">
           <div class="modal-dialog">
 
         <!-- Modal Signin content-->
-              <div class="modal-content" style="background:rgba(0,0,0,0.5); padding:100px; color:white;font-size:15px">
+              <div class="modal-content modalfield">
                   <form class="form-horizontal">
+
+                      <div class="form-group">
+                          <label class="control-label col-sm-4" for="First Name">First Name</label>
+                          <div class="col-sm-8">
+                              <input type="First Name" class="form-control" id="First Name" placeholder="Enter Your First Name">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="control-label col-sm-4" for="Last Name">Last Name</label>
+                          <div class="col-sm-8">
+                              <input type="Last Name" class="form-control" id="Last Name" placeholder="Enter Your Last Name">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <label class="control-label col-sm-4" for="Registration No">Registration No</label>
+                          <div class="col-sm-8">
+                              <input type="Registration No" class="form-control" id="Registration No" placeholder="Enter Your Registration Number">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <label class="control-label col-sm-4" for="Area">Area</label>
+                          <div class="col-sm-8">
+                              <input type="Area" class="form-control" id="Areao" placeholder="Enter Your Area">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <label class="control-label col-sm-4" for="Mobile">Mobile</label>
+                          <div class="col-sm-8">
+                              <input type="Mobile" class="form-control" id="Mobile" placeholder="Enter Your Mobile">
+                          </div>
+                      </div>
+
+
                       <div class="form-group">
                           <label class="control-label col-sm-4" for="username">User Name</label>
                           <div class="col-sm-8">
                               <input type="username" class="form-control" id="username" placeholder="Enter User Name">
                           </div>
                       </div>
+
                       <div class="form-group">
                           <label class="control-label col-sm-4" for="pwd">Password</label>
                           <div class="col-sm-8">
@@ -126,17 +201,27 @@
                           </div>
                       </div>
 
+
                       <div class="form-group">
                           <div class="col-sm-offset-9 col-sm-3" >
-                              <button type="submit" class="btn btn-success">Login</button>
+                              <button type="submit" class="btn btn-success">Register</button>
                           </div>
                       </div>
+
                   </form>
               </div>
           </div>
       </div>
-  
-    </div>
+
+
+
+  </div>
+
+</div>
+
+
+
+
 
 </div>
 
